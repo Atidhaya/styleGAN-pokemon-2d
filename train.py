@@ -98,7 +98,8 @@ if 0:
     tf_config     = {'rnd.np_random_seed': 1000}                                   # Options for tflib.init_tf().
 
     # Dataset (choose one).
-    desc += '-celebahq';            dataset = EasyDict(tfrecord_dir='celebahq'); train.mirror_augment = True
+    desc += '-pokemon-rgb';            dataset = EasyDict(tfrecord_dir='pokemon-rgb'); train.mirror_augment = True
+    # desc += '-celebahq';            dataset = EasyDict(tfrecord_dir='celebahq'); train.mirror_augment = True
     #desc += '-celeba';              dataset = EasyDict(tfrecord_dir='celeba'); train.mirror_augment = True
     #desc += '-cifar10';             dataset = EasyDict(tfrecord_dir='cifar10')
     #desc += '-cifar100';            dataset = EasyDict(tfrecord_dir='cifar100')
