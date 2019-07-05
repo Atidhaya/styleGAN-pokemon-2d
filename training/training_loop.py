@@ -152,6 +152,8 @@ def training_loop(
                 network_pkl, resume_kimg = misc.locate_latest_pkl()
             else:
                 network_pkl = misc.locate_network_pkl(resume_run_id, resume_snapshot)
+            print('Loading networks from "%s"...' % network_pkl)
+            G, D, Gs = misc.load_pkl(network_pkl)
         else:
             print('Constructing networks...')
             G = tflib.Network('G', num_channels=training_set.shape[0], resolution=training_set.shape[1], label_size=training_set.label_size, **G_args)
