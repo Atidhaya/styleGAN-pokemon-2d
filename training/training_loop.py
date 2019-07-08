@@ -147,6 +147,7 @@ def training_loop(
 
     # Construct networks.
     with tf.device('/gpu:0'):
+        print("Resume run id: " + resume_run_id)
         if resume_run_id is not None:
             if resume_run_id == 'latest':
                 network_pkl, resume_kimg = misc.locate_latest_pkl()
