@@ -12,7 +12,7 @@
 
 # result_dir = 'results'
 
-result_dir = 'drive/Shared drives/Advance Data Mining/Pokemon GANs/results'
+result_dir = 'drive/Shared drives/Advance Data Mining/Pokemon GANs 2D/results'
 data_dir = 'datasets'
 cache_dir = 'cache'
 run_dir_ignore = ['results', 'datasets', 'cache']
