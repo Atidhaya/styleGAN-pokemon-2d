@@ -34,7 +34,7 @@ if 1:
     tf_config     = {'rnd.np_random_seed': 1000}                                           # Options for tflib.init_tf().
 
     # Dataset.
-    desc += '-pokemon-rgb';            dataset = EasyDict(tfrecord_dir='pokemon-rgb'); train.mirror_augment = True
+    desc += '-pokemon-2d';            dataset = EasyDict(tfrecord_dir='pokemon-2d'); train.mirror_augment = True
     # desc += '-ffhq';     dataset = EasyDict(tfrecord_dir='ffhq');                 train.mirror_augment = True
     #desc += '-ffhq512';  dataset = EasyDict(tfrecord_dir='ffhq', resolution=512); train.mirror_augment = True
     #desc += '-ffhq256';  dataset = EasyDict(tfrecord_dir='ffhq', resolution=256); train.mirror_augment = True
@@ -99,7 +99,7 @@ if 0:
     tf_config     = {'rnd.np_random_seed': 1000}                                   # Options for tflib.init_tf().
 
     # Dataset (choose one).
-    desc += '-pokemon-rgb';            dataset = EasyDict(tfrecord_dir='pokemon-rgb'); train.mirror_augment = True
+    desc += '-pokemon-2d';            dataset = EasyDict(tfrecord_dir='pokemon-2d'); train.mirror_augment = True
     # desc += '-celebahq';            dataset = EasyDict(tfrecord_dir='celebahq'); train.mirror_augment = True
     #desc += '-celeba';              dataset = EasyDict(tfrecord_dir='celeba'); train.mirror_augment = True
     #desc += '-cifar10';             dataset = EasyDict(tfrecord_dir='cifar10')
